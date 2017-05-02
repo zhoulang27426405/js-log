@@ -1,0 +1,46 @@
+<div class="ui breadcrumb fn-pl1em">
+    <a class="section" href="/#">主页</a>
+    <i class="right arrow icon divider"></i>
+    <div class="active section">{{productInfo.name}}</div>
+</div>
+<div class="ui stackable items">
+    <div class="item" ng-click="selectPvUvByProduct(productInfo)">
+        <div class="image">
+            <img src="/images/category/pvuv.png">
+        </div>
+        <div class="content">
+            <div class="name">PV/UV</div>
+            <p class="description">PV（page view）即页面浏览量，简称为PV。用户每1次对网站中的每个网页访问均被记录1次。用户对同一页面的多次访问，访问量累计。是评价网站流量最常用的指标之一。</p>
+            <p class="description">UV（unique visitor）即网站独立访客。是指不同的、通过互联网访问、浏览这个网页的自然人。UV也是评价网络流量最常用的指标之一。</p>
+            <div class="extra">
+                N 访问
+            </div>
+        </div>
+    </div>
+    <div class="item" ng-click="selectClickByProduct(productInfo)">
+        <div class="image">
+            <img src="/images/category/click.png">
+        </div>
+        <div class="content">
+            <!--<div class="meta">数值图</div>-->
+            <div class="name">数值图</div>
+            <p class="description">用户行为数值图，即添加配置页面路径，选择一个浏览查看的时间段，绘制生成用户行为在这一段时间的对应页面路径的各页面元素数值。</p>
+            <div class="extra">
+                N 访问
+            </div>
+        </div>
+    </div>
+    <div class="item" ng-click="selectHotByProduct(productInfo)">
+        <div class="image">
+            <img src="/images/category/hot.jpg">
+        </div>
+        <div class="content">
+            <!--<div class="meta">数值图</div>-->
+            <div class="name">热力图</div>
+            <p class="description">用户行为热力图，即添加配置页面路径，选择一个浏览查看的时间段，绘制生成用户行为在这一段时间的对应页面路径的热力图。</p>
+            <div class="extra">
+                N 访问
+            </div>
+        </div>
+    </div>
+</div>

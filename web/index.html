@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>日志数据统计平台</title>
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/semantic.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body ng-app="cloudLog">
+    <article ng-controller="indexController">
+        <div class="ui segment app-menu">
+            <div class="ui secondary pointing menu">
+                <div class="right menu">
+                    <a class="item" ng-class="{active: (currentPhash == 'help')}" href="#/help/system">
+                        <i class="help icon"></i> 帮助中心
+                    </a>
+                    <a class="ui item" ng-click="login()"><i class="user icon"></i>登录</a>
+                    <a class="ui item" ng-click="login()"><i class="sign out icon"></i>注销</a>
+                </div>
+                <a class="item" ng-class="{active: (currentPhash == '/')}" href="#/">
+                    <i class="home icon"></i> 主页
+                </a>
+                <div class="ui dropdown item" ng-class="{active: (currentPhash == product.hash)}"
+                        ng-show="product.show == true" ng-repeat="product in products">
+                    <i class="{{product.icon}} icon"></i>
+                    <a href="#/{{product.hash}}">{{product.name}}</a>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="#/{{product.hash}}/pvuv">PV/UV</a>
+                        <a class="item" href="#/{{product.hash}}/click">数值图</a>
+                        <a class="item" href="#/{{product.hash}}/hot">热力图</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section style="padding: 0 1em;">
+            <ng-view>
+                <div class="fn-loading">
+                    <span class="ui active inline loader center"></span>
+                </div>
+            </ng-view>
+        </section>
+    </article>
+    <div class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">登录&注销</div>
+        <div class="content">
+            <div class="fn-center">登录系统维护中...</div>
+        </div>
+        <div class="actions">
+            <!--<div class="ui button">取消</div>-->
+            <div class="ui button">确定</div>
+        </div>
+    </div>
+
+    <!--lib-->
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-route.js"></script>
+    <script src="js/lib/underscore.1.7.0.js"></script>
+    <script src="js/lib/jquery-1.7.2.js"></script>
+
+    <!--base-->
+    <script src="js/app-web.js"></script>
+    <script src="js/route/route.js"></script>
+
+    <!--model-->
+    <script src="js/model/Products.js"></script>
+
+    <!--service-->
+    <script src="js/service/appService.js"></script>
+    <script src="js/service/echartsService.js"></script>
+    <script src="js/service/iframeService.js"></script>
+    <script src="js/service/clickColorService.js"></script>
+
+    <!--controler-->
+    <script src="js/controller/indexController.js"></script>
+    <script src="js/controller/applicationController.js"></script>
+    <script src="js/controller/pvUvController.js"></script>
+    <script src="js/controller/picClickController.js"></script>
+    <script src="js/controller/picHotController.js"></script>
+    <script src="js/controller/helpController.js"></script>
+
+    <!--directive-->
+    <script src="js/directive/commonDirective.js"></script>
+
+    <!--filter-->
+    <script src="js/filter/commonFilter.js"></script>
+
+    <script src="js/lib/semantic.js"></script>
+
+    <script src="js/lib/crossDomainOuter.js"></script>
+    <script src="js/util/util.js"></script>
+
+    <script src="js/lib/echarts/echarts.js"></script>
+    <script>
+        require.config({
+            paths: {
+                echarts: './js/lib/echarts'
+            }
+        });
+    </script>
+</body>
+</html>

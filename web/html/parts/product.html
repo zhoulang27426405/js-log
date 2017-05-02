@@ -1,0 +1,93 @@
+<div class="ui page grid overview segment">
+    <div class="ui two wide column"></div>
+    <div class="twelve wide column">
+        <div class="ui three column center aligned stackable divided grid">
+            <div class="column" ng-class="{layer: (product.show == false)}" ng-repeat="product in products">
+                <div class="ui icon header">
+                    <i class="circular icon">
+                        <a href="http://zhida.baidu.com/" target="_blank">
+                            <img src="images/logo/{{product.logo}}" width="40">
+                        </a>
+                    </i>
+                    {{product.name}}
+                </div>
+                <p class="fn-mb20" title="{{product.product_desc}}">{{product.product_desc}}</p>
+                <p><a class="ui teal right labeled icon button" href="#/{{product.hash}}">Go <i class="right long arrow icon"></i></a></p>
+            </div>
+            <!--
+            <div class="column">
+                <div class="ui icon header">
+                    <i class="circular icon">
+                        <a href="http://zhida.baidu.com/" target="_blank">
+                            <img src="images/logo/logo_zhida.png" width="40">
+                        </a>
+                    </i>
+                    直达号
+                </div>
+                <p class="fn-mb20">商家在百度移动平台的官方服务账号。基于移动搜索、@账号、地图、个性化推荐等多种方式，让亿万客户随时随地直达商家服务。</p>
+                <p><a class="ui teal right labeled icon button" href="#/zhida">Go <i class="right long arrow icon"></i></a></p>
+            </div>
+            <div class="column layer">
+                <div class="ui icon header">
+                    <i class="circular icon">
+                        <a href="http://store.baidu.com/" target="_blank">
+                            <img src="images/logo/logo_yingjian.png" width="40">
+                        </a>
+                    </i>
+                    未来商店
+                </div>
+                <p class="fn-mb20" title="百度未来商店作为行业内首个基于生活需求和场景的智能硬件信息互动平台，秉承“科技改变生活”的理念，通过智能硬件提升人们在运动、睡眠、生活、出行、娱乐等方面的品质，让用户更有效的关爱自身健康和家庭生活，让科技真正融入到老百姓的生活中。平台将围绕可穿戴、智能家居、安全出行等几大领域，提供最前沿、最时尚、最实用、最专业的硬件产品介绍、服务定制、最新资讯、圈子交流等服务，打造行业最专业的智能硬件信息互动平台。">百度未来商店作为行业内首个基于生活需求和场景的智能硬件信息互动平台，秉承“科技改变生活”的理念，通过智能硬件提升人们在运动、睡眠、生活、出行、娱乐等方面的品质，让用户...</p>
+                <p><a class="ui teal right labeled icon button" href="#/store">Go <i class="right long arrow icon"></i></a></p>
+            </div>
+            <div class="column layer">
+                <div class="ui icon header">
+                    <i class="circular icon">
+                        <a href="http://pan.baidu.com/disk/home" target="_blank">
+                            <img src="images/logo/logo_pan.png" width="40">
+                        </a>
+                    </i>
+                    网盘
+                </div>
+                <p class="fn-mb20"></p>
+                <p><a class="ui teal right labeled icon button" href="#/pan">Go <i class="right long arrow icon"></i></a></p>
+            </div>-->
+        </div>
+    </div>
+</div>
+<div class="ui inverted teal page grid segment">
+    <div class="ten wide column">
+        <div class="ui three column stackable grid">
+            <div class="column">
+                <div class="ui header">社区</div>
+                <div class="ui inverted link list">
+                    <a class="item" href="http://fe.baidu.com/" target="_blank">FE Home</a>
+                    <a class="item" href="http://felabs.bae.baidu.com/" target="_blank">FE创意展示平台</a>
+                    <a class="item" href="http://fe.baidu.com/weekly/" target="_blank">前端技术周报</a>
+                    <a class="item" href="http://fe.baidu.com/doc/share/" target="_blank">文档分享平台</a>
+                    <a class="item" href="http://fex.baidu.com/" target="_blank">FEX-WEB前端研发部</a>
+                    <a class="item" href="http://mweb.baidu.com/" target="_blank" class="fn-red">MWEB-无线WEB研发团队</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui header">友链</div>
+                <div class="ui inverted link list">
+                    <a class="item" href="http://scm.baidu.com/" target="_blank">http://scm.baidu.com/</a>
+                    <a class="item" href="http://icms.baidu.com/" target="_blank">http://icms.baidu.com/</a>
+                    <a class="item" href="http://icafe.baidu.com/" target="_blank">http://icafe.baidu.com/</a>
+                    <a class="item" href="http://family.baidu.com/" target="_blank">http://family.baidu.com/</a>
+                    <a class="item" href="http://babel.baidu.com/" target="_blank">http://babel.baidu.com/</a>
+                    <a class="item" href="http://erp.baidu.com/" target="_blank">http://erp.baidu.com/</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="six wide right floated aligned column">
+        <h3 class="ui header">关于</h3>
+        <div class="ui inverted link list">
+            <a class="item" href="#/help/system">产品介绍</a>
+            <a class="item" href="#/help/change_log">change-log</a>
+            <a class="item" href="#/help/about_us">关于我们</a>
+        </div>
+        <p>&copy; 2014 - 百度云前端团队</p>
+    </div>
+</div>

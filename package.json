@@ -1,0 +1,23 @@
+{
+	"name": "angular-log",
+	"version": "1.0.0",
+	"description": "app of log",
+	"author": {
+		"name": "jinguangguo",
+		"email": "jinguangguo@baidu.com"
+	},
+	"devDependencies": {
+		"express": "4.9.4",
+        "log4js": "0.6.21",
+        "expect.js": "0.3.1",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-csslint": "*",
+        "grunt-contrib-htmlmin": "*",
+        "grunt-contrib-cssmin": "*"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"dependencies": {}
+}

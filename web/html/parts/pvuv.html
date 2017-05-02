@@ -1,0 +1,71 @@
+<div class="ui breadcrumb fn-pl1em">
+    <a class="section" href="/#">主页</a>
+    <i class="right arrow icon divider"></i>
+    <a class="section" href="/#/{{productInfo.hash}}">{{productInfo.name}}</a>
+    <i class="right arrow icon divider"></i>
+    <div class="active section">PV/UV</div>
+</div>
+<div class="ui error form segment" id="searchForm">
+    <!--<div class="ui error message">
+        <p class="fn-center">You can only sign up for an account once with a given e-mail address.</p>
+    </div>-->
+    <div class="four fields">
+        <!--<div class="field">
+            <label>path</label>
+            <div class="ui selection dropdown">
+                <input type="hidden" name="apppath" value="{{productInfo.defaults.path}}">
+                <div class="text fn-min9">{{productInfo.defaults.desc}}</div>
+                <i class="dropdown icon"></i>
+                <div class="menu ui transition hidden">
+                    <div class="item" ng-repeat="pathObj in productInfo.path_array"
+                            data-value="{{pathObj.path}}">{{pathObj.desc}}</div>
+                </div>
+            </div>
+        </div>-->
+        <input type="hidden" name="apppath" value="{{productInfo.defaults.path}}">
+        <div class="field">
+            <label>date(当前日期的前一天开始算起)</label>
+            <div class="ui selection dropdown">
+                <input type="hidden" name="recent" value="7" ng-model="condition.recent">
+                <div class="text fn-min9">近7天</div>
+                <i class="dropdown icon"></i>
+                <div class="menu ui transition hidden">
+                    <div class="item" data-value="1" ng-click="selectRange()">近1天</div>
+                    <div class="item" data-value="3" ng-click="selectRange()">近3天</div>
+                    <div class="item active" data-value="7" ng-click="selectRange()">近7天</div>
+                    <div class="item" data-value="15" ng-click="selectRange()">近15天</div>
+                    <div class="item" data-value="-1" ng-click="selectDate()">自定义</div>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <label ng-show="isSelectDate == true">开始时间</label>
+            <div class="ui input" ng-show="isSelectDate == true">
+                <input type="date" name="startDay" placeholder="开始时间">
+            </div>
+        </div>
+        <div class="field">
+            <label ng-show="isSelectDate == true">结束时间</label>
+            <div class="ui input" ng-show="isSelectDate == true">
+                <input type="date" name="endDay" placeholder="结束时间">
+            </div>
+        </div>
+        <div class="field fn-right">
+            <label>&nbsp;</label>
+            <div class="ui blue submit button" ng-click="render()">绘制</div>
+        </div>
+    </div>
+    <div class="ui active inverted dimmer" ng-show="loading === true">
+        <div class="ui text loader"></div>
+    </div>
+</div>
+<div class="ui raised segment fn-center">
+    <div id="charts-container" ng-hide="listData != undefined" class="fn-margin-auto">
+        <div class="fn-loading">
+            <span class="ui active inline loader center"></span>
+        </div>
+    </div>
+    <div id="data-none" class="data-none fn-center" ng-show="listData.length == 0">
+        <span class="ui active inline center">没有数据</span>
+    </div>
+</div>

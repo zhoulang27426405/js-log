@@ -1,0 +1,104 @@
+<div class="ui breadcrumb fn-pl1em">
+    <a class="section" href="#/">主页</a>
+    <i class="right arrow icon divider"></i>
+    <div class="active section">帮助中心</div>
+</div>
+<div class="ui stacked segment fn-min-height-30 m-help-tab">
+    <div class="ui tabular menu fn-right">
+        <a class="item" href="#/help/system" data-tab="introduction" ng-class="{active: helpUrl == '/help/system'}">
+            产品介绍
+        </a>
+        <a class="item" href="#/help/change_log" data-tab="change-log" ng-class="{active: helpUrl == '/help/change_log'}">
+            changeLog
+        </a>
+        <a class="item" href="#/help/about_us" data-tab="about-us" ng-class="{active: helpUrl == '/help/about_us'}">
+            关于我们
+        </a>
+    </div>
+    <div class="ui tab" data-tab="introduction" ng-class="{active: helpUrl == '/help/system'}">
+        <p class="fn-ti2">Rover是移动端用户行为分析的工具平台，提供面对移动端的用户行为数据采集、用户行为分析、可视化呈现的完整解决方案，旨在结合用户行为的分析和理解，改进移动端产品的内容展示，提升产品的可用性和易用性，最终服务于页面设计和产品策略的优化，整体提升产品的用户体验。</p>
+        <p class="fn-ti2">目前(Rover1期)已经实现的主要功能有：</p>
+        <div class="ui ordered list fn-ti2">
+            <div class="item">用户行为数据的js脚本采集。通过在移动端产品界面上调用捕获用户行为的js采集脚本，完整记录下在一个实验周期内的所有用户行为。Rover一期已经支持在移动web页面上的点击和滑动行为事件的记录和采集。</div>
+            <div class="item">用户行为数据存储。所有采集到的用户行为数据以及相关log日志写入并存储在数据库中，方便后期分析和查看。</div>
+            <div class="item">后台管理和实验查看。
+                <!--<div class="list">
+                    <div class="item">HTML</div>
+                    <div class="item">Javascript</div>
+                    <div class="item">CSS</div>
+                </div>-->
+            </div>
+            <div class="item">数据可视化呈现及图表功能。Rover一期已经支持PV/UV、数值图、热力图等几种形式。</div>
+        </div>
+        <p class="fn-ti2">Rover1期功能已经能很好支持在移动页面(html5)上对用户点击行为的分析和可视化呈现。Rover1期也已经开始在直达号、百度云(网盘)、百度钱包等产品线的部署。</p>
+        <p class="fn-ti2">2期和后续开发也在积极准备和进行中，目前初步规划的功能有：支持native客户端/sdk、支持连续移动页面的session分析、对更多移动用户行为的捕获采集，等等，敬请期待和关注。</p>
+    </div>
+    <div class="ui tab" data-tab="change-log" ng-class="{active: helpUrl == '/help/change_log'}">
+        <div class="ui divided list">
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <span class="header">2014-12-18</span>
+                    <div class="description">联调PV/UV数据</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <span class="header">2014-12-19</span>
+                    <div class="description">优化数值图</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <span class="header">2014-12-22</span>
+                    <div class="description">增加热力图</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <span class="header">2014-12-23</span>
+                    <div class="description">系统界面优化</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <span class="header">2014-12-25</span>
+                    <div class="description">系统一期交付</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui tab" data-tab="about-us" ng-class="{active: helpUrl == '/help/about_us'}">
+        <p>Rover项目团队由隶属于移动云事业部的百度云前端团队FE同学和移动用户体验部的UER同学共同组成。</p>
+        <p><a class="header" href="http://fe.baidu.com/cloud/doc/team/info.text">云前端团队</a>隶属于百度云平台部，是服务于直达号、轻应用接入平台、云设备（创新方向）、网盘、智能设备等产品线的前端研发团队。</p>
+        <p>移动用户体验部(MUX)负责百度无线的所有产品的视觉、交互和用户研究方面的工作，致力于做行业内最优秀，体验最好的无线产品。</p>
+        <p>欢迎联系和关注我们。</p>
+        <!--<div class="ui divided list">
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <a class="header" href="http://fe.baidu.com/cloud/doc/team/info.text">团队介绍</a>
+                    <div class="description">百度云前端团队</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <a class="header" href="http://fe.baidu.com/cloud/">文档平台</a>
+                    <div class="description">百度云前端团队文档平台</div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="map marker icon"></i>
+                <div class="content">
+                    <a class="header" href="https://github.com/cloud-fe">github</a>
+                    <div class="description">技术积累</div>
+                </div>
+            </div>
+        </div>-->
+    </div>
+</div>

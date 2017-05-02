@@ -1,0 +1,132 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+
+body iframe {
+    border: 0 none;
+}
+.ui.segment.app-menu {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.ui.page.grid.segment {
+    padding: 6rem 0;
+}
+.pic-content {
+    border-top: 1px #ccc solid;
+    min-height: 200px;
+    background-color: #00B5AD;
+}
+
+.fn-hide {
+    display: none;
+}
+
+.fn-fr {
+    float: right;
+}
+
+.fn-fl {
+    float: left;
+}
+
+.fn-loading {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.fn-center {
+    text-align: center;
+}
+
+.fn-right {
+    text-align: right;
+}
+
+.fn-hidden {
+    overflow: hidden;
+}
+
+.fn-mb10 {
+    margin-bottom: 10px;
+}
+.fn-mb15 {
+    margin-bottom: 15px;
+}
+.fn-mb20 {
+    margin-bottom: 20px;
+}
+
+.fn-pl1em {
+    padding-left: 1em;
+}
+
+.fn-ib {
+    display: inline-block;
+}
+
+.ui.dropdown:hover .menu {
+    display: block;
+}
+
+.page {
+    padding:1em;
+}
+.ui.center.aligned.grid > .column.layer {
+    position: relative;
+}
+.ui.center.aligned.grid > .column.layer:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 101%;
+    background-color: rgba(255,255,255,.8);
+    visibility: visible;
+    display: block;
+    clear: both;
+}
+
+.ui.breadcrumb {
+    margin-bottom: 0;
+}
+
+.ui.form input[type="date"] {
+    padding: 0.6em 1.2em;
+}
+
+#searchForm {
+    padding-bottom: 0;
+}
+
+.data-none {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.fn-margin-auto {
+    margin: 0 auto;
+}
+
+.fn-min9 {
+    min-width: 9rem;
+}
+
+.fn-min-height-30 {
+    min-height: 30rem;
+}
+.fn-ti2 {
+    text-indent: 2em;
+}
+/*.ui.tabular.menu .active.item {*/
+    /*background-color: #FAFAFA;*/
+/*}*/
+
+.ui.dropdown .menu {
+    z-index: 10000;
+}
+.m-help-tab {
+    line-height: 1.8em;
+}
